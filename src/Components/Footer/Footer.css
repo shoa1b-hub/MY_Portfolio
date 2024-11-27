@@ -1,0 +1,38 @@
+.footer{
+    width: 100vw;
+    height: 3rem;
+    background: rgb(40, 40, 40);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 300;
+    font-size: small;
+    position: relative;
+}
+.button{
+    color: white;
+    border-radius: 20px;
+    background: linear-gradient(264deg, #7f5d2e -5.09%, #6c3f81 106.28%);
+    cursor: pointer;
+    transition: 0.3s;
+    padding: 5px 10px;
+    position: absolute;
+    right: 20px;
+}
+.button a{
+    color: #fff;
+    text-decoration: none;
+}
+.button:hover{
+    transform: scale(1.1);
+    transition: 0.3s;
+}
+@media (max-width:768px) {
+    .footer{
+        font-size: 10px;
+    }
+    .button{
+        border-radius: 10px;
+        padding: auto;
+    }
+}

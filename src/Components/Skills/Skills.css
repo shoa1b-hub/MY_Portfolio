@@ -1,0 +1,103 @@
+.skills{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+    margin: auto;
+}
+.skills-title{
+    position: relative;
+}
+.skills-title h1{
+    padding: 0px 30px;
+    font-size: 60px;
+    font-weight: 600px;
+}
+.skills-title img{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    z-index: -1;
+}
+.skill-paragraph{
+    display: flex;
+    align-items: center;
+    margin-top: 30px;
+    margin-bottom: 10px;
+    font-size: 24px;
+    font-weight: 400;
+}
+.skill-section{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: auto;
+    margin-bottom: 30px;
+    justify-content: center;
+    gap: 30px;
+}
+.skill-subsection {
+    width: 100%;
+    max-width: 500px;
+    border: 2px solid #fff;
+    border-radius: 16px;
+    padding: 18px 36px;
+    @media (max-width:768px) {
+        font-size: 400px;
+        padding: 10px 36px;
+    }
+    @media (max-width:500px) {
+        font-size: 330px;
+        padding: 10px 36px;
+    }
+}
+.subsection-title{
+    font-size: 35px;
+    font-weight: 500;
+    background: linear-gradient(70deg, #df8908 10%, #b415ff 100%);
+    margin-bottom: 20px;
+    text-align: center;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.skill-subsection:hover{
+    border: #9f379f;
+    background-image: linear-gradient(45deg, #3f0028, #582300);
+    transform: scale(1.05);
+    transition: 0.4s;
+}
+.subsection-list{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin-bottom: 20px;
+}
+.subsection-item{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    justify-content: space-between;
+    font-size: 16px;
+    border-radius: 12px;
+    border: 1px solid #f0e0c9;
+    padding: 12px 16px;
+    font-weight: 400;
+
+    @media (max-width:768px) {
+        font-size: 14px;
+        padding: 8px 12px;
+    }
+    @media (max-width:500px) {
+        font-size: 14px;
+        padding: 6px 12px;
+    }
+
+}
+
+.subsection-item img{
+    width: 24px;
+    height: 24px;
+}

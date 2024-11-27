@@ -1,0 +1,84 @@
+html {
+    scroll-behavior: smooth;
+  }
+.hero{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 35px;
+    background-size: cover;
+}
+
+.hero-main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    background-image: url("../../assets/background.gif");
+}
+
+.hero-main img{
+    margin-top: auto;
+    border-radius: 50%; 
+    width: 220px; 
+    height: 220px; 
+    object-fit: cover; 
+}
+
+.hero-main h1{
+    text-align: center;
+    width: 60%;
+    font-size: 50px;
+    font-weight: 600;
+}
+.hero-main h1 span{
+    background: linear-gradient(270deg, #df8908 10%, #b415ff 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.hero p{
+    width: 90%;
+    text-align: center;
+    font-size: 22px;
+    line-height: 40px;
+}
+
+.hero-action{
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    font-size: 22px;
+    font-weight: 500;
+    margin-bottom: 50px;
+}
+.hero-connect{
+    padding: 10px 30px;
+    border-radius: 50px;
+    background: linear-gradient(264deg, #df8908 -5.09%, #b415ff 106.28%);
+    font-style: italic;
+    cursor: pointer;
+}
+.hero-connect a{
+    color: #fff;
+    text-decoration: none;
+}
+.hero-connect:hover{
+    border: 2px solid #fff;
+}
+.hero-resume{
+    padding: 10px 30px;
+    border-radius: 50px;
+    border: 2px solid #fff;
+    cursor: pointer;
+    font-style: italic;
+}
+.hero-resume a{
+    color: #fff;
+    text-decoration: none;
+}
+.hero-resume:hover{
+    border: 2px solid #b415ff;
+}

@@ -1,0 +1,134 @@
+.about{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+    margin: auto;
+}
+.about-title{
+    position: relative;
+}
+.about-title h1{
+    padding: 0px 30px;
+    font-size: 60px;
+    font-weight: 600px;
+}
+.about-title img{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    z-index: -1;
+}
+.about-section{
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 120px;
+    margin: auto;
+}
+.left{
+    display: flex;
+    flex-basis: 35%;
+    justify-content: center;
+    align-items: center;
+}
+.left img{
+    width: 100%;
+    max-width: 300px;
+    border-radius: 15px;
+    height: auto;
+    object-fit: cover;
+}
+.right{
+    display: flex;
+    flex-direction: column;
+    flex-basis: 60%;   
+}
+.about-para{
+    display: flex;
+    flex-direction: column;
+    font-size: 18px;
+    font-weight: 500;
+}
+.tab-titles{
+    display: flex;
+    margin: 20px 0 40px;
+}
+.tab-links{
+    margin-right: 50px;
+    font-size: 18px;
+    font-weight: 500;
+    cursor: pointer;
+    position: relative;
+}
+.tab-links::after{
+    content: '';
+    width: 0;
+    height: 3px;
+    background: linear-gradient(270deg, #df8908 10%, #b415ff 100%);
+    position: absolute;
+    left: 0;
+    bottom: -8px;
+    transition: 0.5px;
+}
+.tab-links.active-link::after{
+    width: 50%;
+}
+.tab-links:hover{
+    transform: scale(1.05);
+    transition: 0.3s;
+}
+.tab-contents ul li{
+    list-style: none;
+    margin: 10px 0;
+}
+.tab-contents ul li span{
+    color: #df8908;
+    font-size: 15px;
+}
+.tab-contents{
+    display: none;
+}
+.tab-contents.active-tab{
+    display: block;
+}
+.about-achievements{
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    margin-bottom: 80px;
+}
+.achievement{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    transition: 0.5s;
+}
+.achievement h1{
+    font-size: 60px;
+    font-weight: 700;
+    background: linear-gradient(270deg, #df8908 10%, #b415ff 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.achievement p{
+    font-size: 22px;
+    font-weight: 500;
+}
+.achievement:hover{
+    transform: scale(1.12);
+    transition: 0.5s;
+}
+@media (max-width:768px) {
+    .about-para{
+        font-size: 15px;
+    }
+    .achievement h1{
+        font-size: 40px;
+    }
+    .achievement p{
+        font-size: 15px;
+    }
+}
